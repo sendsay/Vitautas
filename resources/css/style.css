@@ -82,13 +82,37 @@ header {
     background-attachment: fixed;
 }
 
+.central-logo-margin {
+    margin-left: 20px;
+
+    width: 20px;
+    height: 50px;
+}
+
 .logo-text-box {
     position: absolute;
     width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 55%;
+    left: -15%;
+    text-align: right;
+    /* transform: translate(-50%, -50%); */
 }
+
+.logo-big {
+    position: relative;
+    height: 400px;
+    width: auto;
+    float: left;
+    left: 35%;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
 
 .main-nav {
     float: right;
