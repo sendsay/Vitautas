@@ -170,13 +170,18 @@ header {
 /*=============================*/
 /*= ABOUT ME                  =*/
 /*=============================*/
-.about-me {
-    background-color: rgb(248, 248, 248)
+.section-about-me {
+    background-color: rgb(248, 248, 248);
+    height: 100vh;
 }
 
 /*=============================*/
 /*= BLOG                      =*/
 /*=============================*/
+.section-my-blog {
+    height: 100vh;
+}
+
 .row-text-blog {
     margin-bottom: 30px;
 }
@@ -196,6 +201,45 @@ header {
     font-size: 120%;
     left: 88%;
 }
+
+/*=============================*/
+/*= SHOP                      =*/
+/*=============================*/
+
+.section-shop { padding: 0; }
+.shop-showcase {
+    list-style: none;
+    width: 100%;   
+}
+
+.shop-showcase li {
+    display: block;
+    float:  left;
+    width: 25%;
+}
+
+.shop-photo {
+    width: 100%;
+    margin: 0;  
+    overflow: hidden; 
+    background: black; 
+}
+
+.shop-photo img {
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.shop-photo img:hover {
+    transform: scale(1.035);
+    opacity: 1;
+}
+
+
+
 
 
 
