@@ -60,7 +60,7 @@ h2 {
 }
 
 h2:after { display: block;
-    height: 4px;
+    height: 6px;
     background-color: #3bff00;
     content: " ";
     width: 100px;
