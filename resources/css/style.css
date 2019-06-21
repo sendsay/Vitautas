@@ -26,6 +26,8 @@ html {
 
 section {
     padding: 80px 0;
+
+    clear: both; /*//////////////////*/
 }
 
 .box {
@@ -58,13 +60,13 @@ h2 {
 }
 
 h2:after { display: block;
-    height: 2px;
-    background-color: #e67e22;
+    height: 4px;
+    background-color: #3bff00;
     content: " ";
     width: 100px;
     margin: 0 auto;
-    margin-top: 30px;}
-
+    margin-top: 30px;
+}
 
 h3 {
     font-size: 110%;
@@ -90,20 +92,21 @@ header {
 }
 
 .logo-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 55%;
-    left: -15%;
+    position: relative;
+    width: auto;
+    left: 50%;
+    top: 200px;
     text-align: right;
-    /* transform: translate(-50%, -50%); */
+    /* transform: translate(60%, 90%); */
 }
 
 .logo-big {
     position: relative;
     height: 400px;
     width: auto;
-    float: left;
-    left: 35%;
+    /* float: left; */
+    left: 100%;
+    top: 40px;
 }
 
 .logo {
@@ -139,4 +142,11 @@ header {
 }
 
 .main-nav li a:hover,
-.main-nav li a:active {border-bottom: 4px solid #3bff00;}
+.main-nav li a:active {border-bottom: 6px solid #3bff00;}
+
+/* ===== PARAGRAPHS ===== */
+.long-copy {
+    line-height: 145%; 
+    width: 70%;
+    margin-left: 15%;
+}
