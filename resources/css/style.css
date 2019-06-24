@@ -16,6 +16,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*=============================*/
 /*= REUSABLE COMPONENTS       =*/
 /*=============================*/
@@ -25,7 +34,7 @@ html {
 }
 
 section {
-    padding: 50px 0;
+    padding: 80px 0;
 
 }
 
@@ -35,8 +44,7 @@ section {
 
 /* ===== HEADINGS ===== */
 h1,
-h2,
-h3 {
+h2 {
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -68,8 +76,9 @@ h2:after { display: block;
 }
 
 h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 100%;
+    margin-bottom: 10px;
 }
 
 /* ===== PARAGRAPHS ===== */
@@ -79,10 +88,23 @@ h3 {
     margin-left: 15%;
     font-size: 140%;
 }
-.long-copy:last-child {
+/* .long-copy:last-child {
     content: " ";
     margin: 0 auto;
     margin-bottom: 100px;
+} */
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ===== ICONS ===== */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #3bff00;
+    margin-bottom: 10px;
 }
 
 /* ===== LINKS ===== */
@@ -106,7 +128,7 @@ a:active {
 /*= HEADER                    =*/
 /*=============================*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/back_ground.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/back_ground.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -178,10 +200,6 @@ header {
 /*=============================*/
 /*= BLOG                      =*/
 /*=============================*/
-.section-my-blog {
-    /* height: 100vh; */
-}
-
 .row-text-blog {
     margin-bottom: 30px;
 }
@@ -208,9 +226,6 @@ header {
 
 .section-shop { 
     padding: 0; 
-    height: auto;
-    
-    margin-bottom: 100px;
 }
 .shop-showcase {
     list-style: none;
@@ -243,5 +258,13 @@ header {
     opacity: 1;
 }
 
+/*=============================*/
+/*= HOW TO BUY                =*/
+/*=============================*/
+
+.section-how-to-buy {
+    background-color: rgb(243, 243, 243);
+ 
+}
 
 
