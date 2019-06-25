@@ -308,4 +308,19 @@ cite img {
     vertical-align: middle;
 }
 
+/*=============================*/
+/*= CONTACTS                  =*/
+/*=============================*/
+.section-contacts h3{
+    text-transform: uppercase;
+    font-size: 140%; 
+    margin-top: 30px; 
+}
 
+.section-contacts p {
+    font-size: 120%;
+}
+
+/* .icon-contacts {
+    margin: 0 auto;
+} */
