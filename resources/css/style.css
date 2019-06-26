@@ -51,7 +51,6 @@ h2 {
 
 h1 {
     margin-top: 0;
-    /* margin-bottom: 20px; */
     color: white;
     font-size: 440%; 
     word-spacing: 4px;
@@ -88,11 +87,6 @@ h3 {
     margin-left: 15%;
     font-size: 140%;
 }
-/* .long-copy:last-child {
-    content: " ";
-    margin: 0 auto;
-    margin-bottom: 100px;
-} */
 
 .box p {
     font-size: 90%;
@@ -203,8 +197,7 @@ header {
 /*= ABOUT ME                  =*/
 /*=============================*/
 .section-about-me {
-    background-color: rgb(248, 248, 248);
-   
+    background-color: rgb(248, 248, 248);   
 }
 
 /*=============================*/
@@ -268,9 +261,6 @@ header {
     background-color: rgb(243, 243, 243); 
 }
 
-.section-how-to-buy 
-
-
 /*=============================*/
 /*= TESTIMONIALS              =*/
 /*=============================*/
@@ -330,3 +320,21 @@ cite img {
 .icon-contacts {
     margin: 0 auto;
 }
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:400px;
+    width:400px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height:400px;
+    width:400px;
+}
+
+
+
+                    
