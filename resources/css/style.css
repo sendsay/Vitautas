@@ -104,7 +104,9 @@ h3 {
     font-size: 350%;
     display: block;
     color: #02b200;
+    margin: 0 auto;
     margin-bottom: 10px;
+    
 }
 
 /* ===== LINKS ===== */
@@ -265,6 +267,8 @@ header {
 .section-how-to-buy {
     background-color: rgb(243, 243, 243); 
 }
+
+.section-how-to-buy 
 
 
 /*=============================*/
