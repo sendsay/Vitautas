@@ -389,7 +389,6 @@ cite img {
 .contact-form {
     width: 90%;
     padding-left: 30px;
-    /* margin: 0 auto;      */
 }
 
 input[type=text],
@@ -418,4 +417,82 @@ textarea {
     border-bottom: 2px solid #02b200;
 }
 
+/*=============================*/
+/*= FOOTER                    =*/
+/*=============================*/
+footer {
+    background-color: rgb(39, 39, 39);
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;    
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0px;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #039700;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 170%;
+
+}
+
+.facebook,
+.twitter,
+.insta {
+    transition: color 0.2s;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #55acee;
+}
+
+.insta:hover {
+    color: #e95950;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+}
+
+/* === END === */
+
+   
                     
