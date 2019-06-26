@@ -408,4 +408,12 @@ textarea {
     outline: none;
 }
 
+#msg-header {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120%; 
+    margin-bottom: 30px;
+}
+
                     
