@@ -1,14 +1,24 @@
 
+var flagDown = true;  //show side panel flag
+
 
 $(function() { 
     $(window).scroll(function() {   
-      if($(this).scrollTop() > 300) {   
-        $('.icon-bar').animate({left: "0px"});  //hide side panel
-        $('#toTop').fadeIn(300);  
+      if($(this).scrollTop() > 300) { 
+        if (flagDown == false) {
+          $('.icon-bar').animate({ left: "0px" });
+          flagDown = true;
+        }    
+        $('#toTop').fadeIn(300);
+
       } else {   
-        if($(this).scrollTop() < 10) {
-        $('.icon-bar').animate({left: "-60px"});  //hide side panel
-        $('#toTop').fadeOut(300);   
+        if($(this).scrollTop() < 1) {
+            if (flagDown == true) {
+              $('.icon-bar').animate({ left: "-60px" });
+              flagDown = false;
+            }
+          $('#toTop').fadeOut(300);  
+
         }
       }         
     });
