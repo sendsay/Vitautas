@@ -128,6 +128,52 @@ a:active {
     left: 88%;
 }
 
+.more-button:hover {
+    color: #039700;
+}
+.btn:link, 
+.btn:visited,
+ button[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.3s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+button[type=submit] {
+    background-color: #02b200;
+    border: 1px solid #02b200;
+    color: white;
+    margin-right: 15px;
+}
+
+.btn-ghost:link, 
+.btn-ghost:visited {
+    color: #02b200;
+    border: 1px solid #02b200;
+}
+
+.btn:hover,
+.btn:active,
+button[type=submit]:hover,
+button[type=submit]:active {
+    background-color: #039700;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #02b200;
+}
+
+.btn-ghost:hover, 
+.btn-ghost:active {
+    border: 1px solid #02b200;
+    color: white;
+}
 
 /*=============================*/
 /*= HEADER                    =*/
@@ -310,6 +356,7 @@ cite img {
     text-align: center;
     font-size: 140%; 
     margin-top: 30px; 
+    margin-bottom: 30px;
 }
 
 .section-contacts p {
@@ -335,6 +382,30 @@ cite img {
     width:400px;
 }
 
+/*=============================*/
+/*= CONTACT FORM              =*/
+/*=============================*/
 
+.contact-form {
+    width: 90%;
+    /* margin: 0 auto;      */
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+
+*:focus {
+    outline: none;
+}
 
                     
