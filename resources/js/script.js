@@ -1,6 +1,4 @@
-
 var flagDown = true;  //show side panel flag
-
 
 $(function() { 
     $(window).scroll(function() {   
@@ -13,17 +11,14 @@ $(function() {
       } else {   
         if (flagDown == true) {
           $('.icon-bar').animate({ left: "-60px" });
-          $('#toTop').animate({ bottom: "-90px"});
-          
+          $('#toTop').animate({ bottom: "-90px"});          
           flagDown = false;
         }
       }         
     });
      
     $('#toTop').click(function() {   
-      $('body, html, footer').animate({scrollTop:0},1000);
-   //   $('.icon-bar').animate({left: "-60px"});  //hide side panel   
-      
+      $('body, html, footer').animate({scrollTop:0},1000);      
     });   
 });
 
