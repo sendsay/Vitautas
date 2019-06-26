@@ -10,19 +10,12 @@ $(function() {
           $('#toTop').animate({ bottom: "10px"});  
           flagDown = true;
         }    
-        // $('#toTop').fadeIn(300);
-      
-
       } else {   
-        if($(this).scrollTop() < 1) {
-            if (flagDown == true) {
-              $('.icon-bar').animate({ left: "-60px" });
-              $('#toTop').animate({ bottom: "-90px"});
-              
-              flagDown = false;
-            }
-          // $('#toTop').fadeOut(300);  
-        //  $('#toTop').animate({ bottom: "-90px"});
+        if (flagDown == true) {
+          $('.icon-bar').animate({ left: "-60px" });
+          $('#toTop').animate({ bottom: "-90px"});
+          
+          flagDown = false;
         }
       }         
     });
