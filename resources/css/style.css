@@ -267,6 +267,7 @@ header {
 
 .section-shop { 
     padding: 0; 
+    cursor:pointer;
 }
 .shop-showcase {
     list-style: none;
@@ -491,6 +492,69 @@ footer p {
     text-align: center;
     color: #888;
 }
+
+/*=============================*/
+/*= ICON BAR                  =*/
+/*=============================*/
+.icon-bar {
+    width: 60px;
+    background-color: #555;
+    position: fixed;
+    top: 200px;
+    left: -60px;
+    /* display: none; */
+    z-index: 2000;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    padding-top: 15px;
+   
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 140%;
+    border: 0;    
+
+  }
+  
+  .icon-bar a:hover {
+    background-color: #02b200;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 180%;
+    width: 70px;
+
+  }
+
+/*=============================*/
+/*= TO TOP                  =*/
+/*=============================*/
+  #toTop {
+    width:50px;
+    /* border:1px solid #ccc; */
+    background:transparent;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:50px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:18px;
+    z-index: 2000;
+    font-size: 76px;
+  
+  }
+  
+  #toTop:hover {
+    color: #02b200;
+  }
 
 /* === END === */
 
