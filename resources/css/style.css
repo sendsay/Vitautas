@@ -173,16 +173,26 @@ button[type=submit]:active {
     color: white;
 }
 
-.btn-flag {
-    width: 30px;
+.flags {
+    width: 100px;
     height: auto;
-    background: transparent;
+    margin-top: 27px;
 }
 
-.btn-flag:hover {
-   
-
+.btn-flag {
+    width: auto;
+    height: 25px;
+    /* background: transparent; */
 }
+
+.flags a {
+    border: 0;
+}
+
+.flag-box {
+    margin-right: 55px;
+}
+
 
 /*=============================*/
 /*= HEADER                    =*/
