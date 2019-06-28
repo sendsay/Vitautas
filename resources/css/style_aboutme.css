@@ -38,7 +38,7 @@ section {
     min-height: 100vh;
 }
 
-F.box {
+.box {
     padding: 1%;
 }
 
@@ -170,13 +170,51 @@ button[type=submit]:active {
 /*=============================*/
 header {
     background-color: #02b200;
-    height: 100vh;
+    height: 460px;
 }
 
 .header {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .header img {
     border-radius: 50%;
 }
+
+/*=============================*/
+/*= THANX                     =*/
+/*=============================*/
+.thanx {
+    margin-top: 20px;
+}
+
+.thanx h3 {
+    border-bottom: 2px solid #02b200;
+}
+
+/*=============================*/
+/*= TO TOP                    =*/
+/*=============================*/
+#toTop {
+    width:50px;
+    /* border:1px solid #ccc; */
+    background:transparent;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom: -90px; /* отступ кнопки от нижнего края страницы*/
+    right:50px;
+    cursor:pointer;
+    /* display:none; */
+    color:#02b200;
+    font-family:verdana;
+    font-size:18px;
+    z-index: 2000;
+    font-size: 76px;  
+  }
+  
+  #toTop:hover {
+    color: #555;
+  }
+
+/* === END === */

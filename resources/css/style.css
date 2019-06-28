@@ -38,7 +38,7 @@ section {
     min-height: 100vh;
 }
 
-F.box {
+.box {
     padding: 1%;
 }
 
@@ -550,7 +550,7 @@ footer p {
   }
 
 /*=============================*/
-/*= TO TOP                  =*/
+/*= TO TOP                    =*/
 /*=============================*/
   #toTop {
     width:50px;
