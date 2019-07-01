@@ -205,7 +205,9 @@ header {
     cursor:pointer;
     color:#02b200;
     z-index: 2000;
-    font-size: 76px;    
+    font-size: 76px;  
+    background: transparent;
+    border-radius: 50%; 
   }
   
   #toTop:hover {

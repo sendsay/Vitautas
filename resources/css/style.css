@@ -395,6 +395,7 @@ cite img {
     text-align:right;
     height:400px;
     width:400px;
+    margin-left: 30px;
 }
 
 .gmap_canvas {
@@ -436,7 +437,9 @@ textarea {
     text-align: center;
     font-size: 120%; 
     margin-bottom: 30px;
-    border-bottom: 2px solid #02b200;
+    /* border-bottom: 2px solid #02b200; */
+    background-color: #02b200;
+    color: white;
 }
 
 /*=============================*/
@@ -567,7 +570,7 @@ footer p {
     font-family:verdana;
     font-size:18px;
     z-index: 2000;
-    font-size: 76px;  
+    font-size: 76px;    
   }
   
   #toTop:hover {
