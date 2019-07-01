@@ -21,6 +21,10 @@ $(function() {
     $('#toTop').click(function() {   
       $('body, html, footer').animate({scrollTop:0}, scrollTime);      
     });   
+
+    $('.section-shop').click(function() {
+      document.location.href = "shop.html";
+    });
 });
 
 // scroll for all anchors
