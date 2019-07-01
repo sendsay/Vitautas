@@ -200,8 +200,8 @@ header {
     position:fixed;
     width: 76px;
     height: 76px;    
-    bottom: 40px;
-    right:50px;
+    bottom: 30px;
+    right:20px;
     cursor:pointer;
     color:#02b200;
     z-index: 2000;
