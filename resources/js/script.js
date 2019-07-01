@@ -1,4 +1,5 @@
 var flagDown = false;  //show side panel flag
+var scrollTime = 1000;  // scrolling page time
 
 $(function() { 
     $(window).scroll(function() {   
@@ -18,7 +19,7 @@ $(function() {
     });
      
     $('#toTop').click(function() {   
-      $('body, html, footer').animate({scrollTop:0},1000);      
+      $('body, html, footer').animate({scrollTop:0}, scrollTime);      
     });   
 });
 
@@ -28,7 +29,7 @@ $(document).ready(function(){
     var anchor = $(this);
     $('html, body').stop().animate({
     scrollTop: $(anchor.attr('href')).offset().top
-    }, 1000);
+    }, scrollTime);
     e.preventDefault();
     });
     return false;
