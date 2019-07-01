@@ -1,4 +1,4 @@
-var flagDown = true;  //show side panel flag
+var flagDown = false;  //show side panel flag
 
 $(function() { 
     $(window).scroll(function() {   
