@@ -6,13 +6,13 @@ $(function() {
       if($(this).scrollTop() > 300) { 
         if (flagDown == false) {
           $('.icon-bar').animate({ left: "0px" });
-          $('#toTop').animate({ bottom: "10px"});  
+          $('#toTop').animate({ bottom: "20px"});  
           flagDown = true;
         }    
       } else {   
         if (flagDown == true) {
           $('.icon-bar').animate({ left: "-60px" });
-          $('#toTop').animate({ bottom: "-90px"});          
+          $('#toTop').animate({ bottom: "-76px"});          
           flagDown = false;
         }
       }         
@@ -29,7 +29,7 @@ $(function() {
 
 // scroll for all anchors
 $(document).ready(function(){
-    $('a[href*=#]').bind("click", function(e){
+    $('a[href*=\#]').bind("click", function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
     scrollTop: $(anchor.attr('href')).offset().top

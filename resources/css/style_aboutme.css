@@ -196,18 +196,21 @@ header {
 /*= TO TOP                    =*/
 /*=============================*/
 #toTop {
+    width:76px;
+    height: 76px;
+    background: white;
     text-align:center;
-    position:fixed;
-    width: 76px;
-    height: 76px;    
-    bottom: 30px;
+    position: fixed;;
+    bottom: 30px; /* отступ кнопки от нижнего края страницы*/
     right:20px;
     cursor:pointer;
     color:#02b200;
     z-index: 2000;
-    font-size: 76px;  
-    background: transparent;
-    border-radius: 50%; 
+    font-size: 76px;    
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.75);   
   }
   
   #toTop:hover {
