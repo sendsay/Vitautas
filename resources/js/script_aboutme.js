@@ -1,7 +1,8 @@
 var flagDown = true;  //show side panel flag
+var offset = 0; // offset page
 
     $(window).scroll(function() {
-        var offset = $(window).scrollTop();
+        offset = $(window).scrollTop();
 
         if(offset <= 300) {         
           offset     = offset / 3.33;
@@ -13,5 +14,9 @@ var flagDown = true;  //show side panel flag
 
      
     $('#toTop').click(function() {   
-      $('body, html, footer').animate({scrollTop:0},1000);      
+      if (offset > 0) {
+        $('body, html, footer').animate({scrollTop:0},1000);   
+      } else {
+        history.back();
+      } 
     });   
