@@ -419,10 +419,12 @@ cite img {
     margin-top: 10px;
 }
 
-.card-map, .card-msg {
+.card-map, 
+.card-msg, 
+.contact-row{
     -webkit-box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
 }
 
 /*=============================*/
