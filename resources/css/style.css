@@ -406,16 +406,23 @@ cite img {
 .mapouter {
     position:relative;
     text-align:right;
-    height:400px;
-    width:400px;
-    margin-left: 30px;
+    height:449px;
+    width:570px;
 }
 
 .gmap_canvas {
     overflow:hidden;
     background:none !important;
-    height:400px;
-    width:400px;
+    height:439px;
+    width:541px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.card-map, .card-msg {
+    -webkit-box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 36px -16px rgba(0,0,0,0.75);
 }
 
 /*=============================*/
@@ -425,6 +432,7 @@ cite img {
 .contact-form {
     width: 90%;
     padding-left: 30px;
+    padding-bottom: 25px;
 }
 
 input[type=text],
