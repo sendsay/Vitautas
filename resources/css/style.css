@@ -555,10 +555,10 @@ footer p {
 /*=============================*/
 /*= TO TOP                    =*/
 /*=============================*/
-  /* #toTop {
-    width:76px;
-    height: 76px;
-    background: transparent;
+  #toTop {
+     width:76px;
+    height: 76px; 
+   /* background: transparent;
     text-align:center;
     position: fixed;;
     bottom: 30px; /* отступ кнопки от нижнего края страницы
@@ -567,7 +567,7 @@ footer p {
     color:#02b200;
     z-index: 2000;
     font-size: 76px;    
-    border-radius: 50%;
+    border-radius: 50%; */
  
   }
 
@@ -575,13 +575,15 @@ footer p {
     color: #555;
   }
   .toTopBackGround {
-    width: 58px;
+    width: 60px;
     height: 60px;
-    margin-right: 9px;
-    margin-bottom: 9px;
+    margin-left: 9px;
+    margin-top: 9px;
+    /* margin-right: 9px;
+    margin-bottom: 9px; */
     background: white;
     position: fixed;
-    bottom: 30px; /* отступ кнопки от нижнего края страницы
+    bottom: 30px; /* отступ кнопки от нижнего края страницы*/
     right:20px;
     cursor:pointer;
     border-radius: 50%;
@@ -590,7 +592,10 @@ footer p {
     box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.75);
     z-index: 1999;  
 
-  } */
+    z-index: 2000;
+    font-size: 76px; 
+
+  }
 
 /* === END === */
 
