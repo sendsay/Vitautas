@@ -8,13 +8,13 @@ $(window).scroll(function() {
 
     if(offset <= 300) {         
       offset     = offset / 3.33;
-      $('#toTop').css({
+      $('#toTopImg').css({
           'transform': 'rotate(' + offset + 'deg)'
       });
     }
 });
      
-$('#toTop').click(function() {   
+$('#toTopImg').click(function() {   
   if (offset > 0) {
     $('body, html, footer').animate({scrollTop:0}, scrollTime);   
   } else {

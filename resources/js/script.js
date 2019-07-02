@@ -6,13 +6,13 @@ $(function() {
       if($(this).scrollTop() > 300) { 
         if (flagDown == false) {
           $('.icon-bar').animate({ left: "0px" });
-          $('#toTop').animate({ bottom: "20px"});  
+          $('#toTop').animate({ bottom: "30px"});  
           flagDown = true;
         }    
       } else {   
         if (flagDown == true) {
-          $('.icon-bar').animate({ left: "-60px" });
-          $('#toTop').animate({ bottom: "-76px"});          
+          $('.icon-bar').animate({ left: "-80px" });
+          $('#toTop').animate({ bottom: "-80px"});          
           flagDown = false;
         }
       }         
