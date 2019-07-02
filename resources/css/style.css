@@ -205,6 +205,10 @@ header {
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
+
+    -webkit-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.9);
+    box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.9);
 }
 
 
@@ -264,7 +268,10 @@ header {
 /*= ABOUT ME                  =*/
 /*=============================*/
 .section-about-me {
-    background-color: rgb(248, 248, 248);   
+    background-color: rgb(248, 248, 248); 
+    -webkit-box-shadow: inset 0px 44px 36px -45px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0px 44px 36px -45px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 44px 36px -45px rgba(0,0,0,0.9);
 }
 
 /*=============================*/
@@ -379,6 +386,12 @@ cite img {
     font-size: 140%; 
     margin-top: 30px; 
     margin-bottom: 30px;
+}
+
+.section-contacts {
+    -webkit-box-shadow: inset 0px 44px 36px -45px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0px 44px 36px -45px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 44px 36px -45px rgba(0,0,0,0.9);
 }
 
 .section-contacts p {
@@ -531,8 +544,8 @@ footer p {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 
-    -webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.95);
-    -moz-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.85);
+    -webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.9);
+    -moz-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.9);
     box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.9);
   }
   
@@ -554,8 +567,8 @@ footer p {
     border-bottom-right-radius: 15px;
     font-size: 180%;
     width: 70px;
-    -webkit-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.95);
-    -moz-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.85);
+    -webkit-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.9);
     box-shadow: 0px 10px 26px -10px rgba(0,0,0,0.9);
   }
 
