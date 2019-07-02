@@ -29,7 +29,7 @@ $(function() {
 
 // scroll for all anchors
 $(document).ready(function(){
-    $('a[href*=\#]').bind("click", function(e){
+    $('a[href*=\\#]').bind("click", function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
     scrollTop: $(anchor.attr('href')).offset().top
