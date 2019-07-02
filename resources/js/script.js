@@ -11,7 +11,7 @@ $(function() {
         }    
       } else {   
         if (flagDown == true) {
-          $('.icon-bar').animate({ left: "-80px" });
+          $('.icon-bar').animate({ left: "-100px" });
           $('#toTop').animate({ bottom: "-80px"});          
           flagDown = false;
         }

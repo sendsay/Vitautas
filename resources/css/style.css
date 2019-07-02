@@ -525,7 +525,7 @@ footer p {
     background-color: #555;
     position: fixed;
     top: 200px;
-    left: -60px;
+    left: -100px;
     /* display: none; */
     z-index: 2000;
     border-top-right-radius: 15px;

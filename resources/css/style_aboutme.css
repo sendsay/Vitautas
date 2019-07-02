@@ -212,8 +212,8 @@ width:76px;
    height: 60px;
    background: white;
    position: fixed;
-   bottom: 30px; /* отступ кнопки от нижнего края страницы*/
-   right:20px;
+   bottom: 45px; /* отступ кнопки от нижнего края страницы*/
+   right:35px;
    cursor:pointer;
    border-radius: 50%;
    -webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.95);
