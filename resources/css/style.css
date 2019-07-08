@@ -614,7 +614,7 @@ footer {
 .social-links {
     list-style: none;
     float: right; 
-     
+    margin-right: 70px;
 }
 
 .footer-nav li,
