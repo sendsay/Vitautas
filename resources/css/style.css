@@ -599,7 +599,6 @@ textarea {
 .##.......##.....##.##.....##....##....##.......##....##.
 .##........#######...#######.....##....########.##.....##
 */
-
 footer {
     background-color: rgb(39, 39, 39);
     padding: 30px;
@@ -614,7 +613,7 @@ footer {
 .social-links {
     list-style: none;
     float: right; 
-    margin-right: 70px;
+
 }
 
 .footer-nav li,
