@@ -150,6 +150,10 @@ button[type=submit] {
     margin-right: 15px;
 }
 
+button[type=submit] {
+    margin-left: 28px;
+}
+
 .btn-ghost:link, 
 .btn-ghost:visited {
     color: #02b200;
@@ -481,7 +485,8 @@ footer {
 
 .social-links {
     list-style: none;
-    float: right;    
+    float: right; 
+     
 }
 
 .footer-nav li,
