@@ -1,4 +1,4 @@
-*=============================*/
+/*=============================*/
 /*= BASIC SETUP               =*/
 /*=============================*/
 * {
@@ -77,7 +77,7 @@ h2:after { display: block;
 h3 {
     font-weight: 300;
     font-size: 100%;
-    margin-bottom: 10px;
+    
 }
 
 /* ===== PARAGRAPHS ===== */
@@ -185,4 +185,9 @@ button[type=submit]:active {
     width: 40px;
     height: 25px;
     /* background: transparent; */
+}
+
+.fieldquantity {
+    margin-left: 50px;
+    width: 350px;
 }
