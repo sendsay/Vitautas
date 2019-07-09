@@ -1,5 +1,6 @@
 var flagDown = false;  //show side panel flag
 var scrollTime = 1000;  // scrolling page time
+var year = new Date();      // get date (for year);
 
 $(function() { 
     $(window).scroll(function() {   
@@ -38,3 +39,5 @@ $(document).ready(function(){
     });
     return false;
 });
+
+document.getElementById("year").innerHTML = year.getFullYear();
