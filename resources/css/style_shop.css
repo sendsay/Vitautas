@@ -201,11 +201,13 @@ button[type=submit]:active {
 .shop-card {
     display: inline-block;
     position: relative;
-    background-color: #02b200;
     color: white;
     padding: 5px;
     width: 200px;
     height: auto;
+    -webkit-box-shadow: 0px 3px 40px -12px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 3px 40px -12px rgba(0,0,0,0.9);
+    box-shadow: 0px 3px 40px -12px rgba(0,0,0,0.9);
 }
 
 .shop-photo > img{
@@ -216,6 +218,7 @@ button[type=submit]:active {
 .fieldquantity {
     width: 100%;
     padding: 0px 10px;
+    display: none;
 }
 
 .buy-check {
@@ -223,6 +226,8 @@ button[type=submit]:active {
     position: relative;
     padding-left: 20px;
     padding-top: 2px;
+    color: #02b200;
+    font-weight: 400;
 }
 
 .header-quantity {
@@ -233,6 +238,13 @@ button[type=submit]:active {
 .quantity {
     margin-left: 10px;
     width: 50px;
+}
+
+.id {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #039700;
 }
 
 
