@@ -187,7 +187,32 @@ button[type=submit]:active {
     /* background: transparent; */
 }
 
+
+/*
+..######..##.....##..#######..########.
+.##....##.##.....##.##.....##.##.....##
+.##.......##.....##.##.....##.##.....##
+..######..#########.##.....##.########.
+.......##.##.....##.##.....##.##.......
+.##....##.##.....##.##.....##.##.......
+..######..##.....##..#######..##.......
+*/
+
+/* .shop-card {
+    display: inline-block;
+    position: relative;
+} */
+
+.shop-photo > img{
+    width: 100%;
+    height: auto;   
+}
+
 .fieldquantity {
-    margin-left: 50px;
-    width: 350px;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.buy-check {
+    width: 50px;
 }
