@@ -222,9 +222,18 @@ button[type=submit]:active {
     width: 50px;
     position: relative;
     padding-left: 20px;
+    padding-top: 2px;
 }
 
-.setquantity h3 {
+.header-quantity {
+    padding-top: 2px;
+    margin-right: 5px;
+}
+
+.quantity {
+    margin-left: 10px;
     width: 50px;
 }
+
+
 
