@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <!-- styles -->
-   
+        <link rel="stylesheet" href="resources/css/style_shopselect.css">
         <link rel="stylesheet" href="resources/css/queries.css">
         <link rel="stylesheet" href="resources/vendors/css/grid.css">
         <link rel="stylesheet" href="resources/vendors/css/normalize.css">
@@ -17,22 +17,6 @@
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-        <!-- BOOTSTRAP -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
-        <!-- <link rel="stylesheet" href="resources/css/style_shopselect.css"> -->
     <title>Select our shop</title>
 </head>
 <body>
@@ -48,26 +32,107 @@
 -->
 
     <header>
-        <div class="jumbotron bg-success">
-  
-
-                <h2 class="display-4 x-auto bg-warning" style="padding: 0 50%">Select Our shop</h2>
-   
-            
+        <div class="row">
+            <h2>Select shop</h2>
         </div>
     </header>
 
-    <section>
-        <div class="container-fluid">
-            <div class="col">
+<!--
+..######..########..######..########.####..#######..##....##
+.##....##.##.......##....##....##.....##..##.....##.###...##
+.##.......##.......##..........##.....##..##.....##.####..##
+..######..######...##..........##.....##..##.....##.##.##.##
+.......##.##.......##..........##.....##..##.....##.##..####
+.##....##.##.......##....##....##.....##..##.....##.##...###
+..######..########..######.....##....####..#######..##....##
+-->
 
-
+    <section class="select-shop">
+        <div class="row">
+            <div class="col span-1-of-3 select">
+                <figure class="select-photo">  
+                    <a href="shop_juv.html"><img src="resources/img/IMG_0168.jpg" alt="Image 4"></a>                 
+                </figure>                 
+                <div class="row header">
+                    <h3>Jewerly</h3>
+                </div>
             </div>
-            
+            <div class="col span-1-of-3 select">
+                <figure class="select-photo">                    
+                    <a href="#"><img src="resources/img/IMG_0092.jpg" alt="Image 4"></a>                     
+                </figure>                 
+                <div class="row header">
+                    <h3>Sculpture</h3>
+                </div>
+            </div>
+            <div class="col span-1-of-3 select">
+                <figure class="select-photo">                    
+                    <a href="#"><img src="resources/img/IMG_0120.jpg" alt="Image 4"></a>                     
+                </figure>                 
+                <div class="row header">
+                    <h3>Gifts</h3>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+<!--
+.########..#######...#######..########.########.########.
+.##.......##.....##.##.....##....##....##.......##.....##
+.##.......##.....##.##.....##....##....##.......##.....##
+.######...##.....##.##.....##....##....######...########.
+.##.......##.....##.##.....##....##....##.......##...##..
+.##.......##.....##.##.....##....##....##.......##....##.
+.##........#######...#######.....##....########.##.....##
+-->
 
+<footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="shop_select.html">Shop</a></li>                 
+               </ul>
+            </div>
+
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/vytautas.karciauskas" target="_blank"><ion-icon class="facebook" name="logo-facebook"></ion-icon></a></li>
+                    <!-- <li><a href="#"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="insta" name="logo-instagram"></ion-icon></a></li>                      -->
+                </ul>
+            </div>           
         </div>
 
-    </section>
-    
+        <div class="row">
+            <div class="col span-1-of-2">
+                <p>Copyright &copy; <span id="year">2010</span> by Vitautas Karchiauskas. All right reseverd.</p>
+            </div>
+        
+
+            <div class="col span-1-of-2">
+                <p>Html/CSS/JS by Shpakov Vladyslav 2019(sendsay34@gmail.com, sendsay@yahoo.com)</p>
+            </div>
+        </div>
+    </footer>
+
+<!--
+.########..#######..########..#######..########.
+....##....##.....##....##....##.....##.##.....##
+....##....##.....##....##....##.....##.##.....##
+....##....##.....##....##....##.....##.########.
+....##....##.....##....##....##.....##.##.......
+....##....##.....##....##....##.....##.##.......
+....##.....#######.....##.....#######..##.......
+-->
+
+    <div id="toTop">
+        <div class="toTopBackGround">
+            <a href="index.html"> <ion-icon id="toTopImg" name="arrow-dropleft-circle"></ion-icon></a>
+        </div>        
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script> 
 </body>
 </html>

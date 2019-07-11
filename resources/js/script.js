@@ -24,7 +24,7 @@ $(function() {
     });   
 
     $('.section-shop').click(function() {
-      document.location.href = "shop.html";
+      document.location.href = "shop_select.html";
     });
 });
 
