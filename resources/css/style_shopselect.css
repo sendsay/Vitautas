@@ -384,7 +384,7 @@ footer p {
     width:76px;
     height: 76px; 
     position: fixed; 
-    bottom: 30px; /* отступ кнопки от нижнего края страницы*/
+    bottom: -80px; /* отступ кнопки от нижнего края страницы*/
     right:20px;
   }
 
