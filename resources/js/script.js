@@ -1,9 +1,18 @@
 var flagDown = false;  //show side panel flag
 var scrollTime = 1000;  // scrolling page time
-var year = new Date();      // get date (for year);
+var year = new Date();      // get date (for year)
+var pageName = location.href;  //get page name
+var offset = 0; // offset page
 
-$(function() { 
-    $(window).scroll(function() {   
+//always get page name
+pageName = pageName.substr(pageName.lastIndexOf("/")); 
+//set year to footer
+document.getElementById("year").innerHTML = year.getFullYear();
+
+//show buttons toTop and iconBar
+$(window).scroll(function() { 
+  switch (pageName) {
+    case "/index.html" : {
       if($(this).scrollTop() > 300) { 
         if (flagDown == false) {
           $('.icon-bar').animate({ left: "0px" });
@@ -16,17 +25,51 @@ $(function() {
           $('#toTop').animate({ bottom: "-80px"});          
           flagDown = false;
         }
-      }         
-    });
-     
-    $('#toTop').click(function() {   
-      $('body, html, footer').animate({scrollTop:0}, scrollTime);      
-    });   
+      } 
+    } 
+    break;
 
-    $('.section-shop').click(function() {
-      document.location.href = "shop_select.html";
-    });
+    //rotate button toTop on page
+    case "/aboutme.html" : {
+      offset = $(window).scrollTop();
+      if(offset <= 300) {         
+        offset     = offset / 3.33;
+        $('#toTopImg').css({
+            'transform': 'rotate(' + offset + 'deg)'
+        });
+      }
+    } 
+    break;
+  
+    default:
+      break;
+  }
 });
+     
+//click toTOP
+$('#toTop').click(function() {
+  switch (pageName) {
+    case "/index.html":
+      $('body, html, footer').animate({scrollTop:0}, scrollTime);
+      break;
+  
+    default:
+      if (offset > 0) {
+        $('body, html, footer').animate({scrollTop:0}, scrollTime);   
+      } else {
+        history.back();
+      } 
+      break;
+  } 
+
+        
+});   
+
+// click SHOP ICONS (index.html)
+$('.section-shop').click(function() {
+  document.location.href = "shop_select.html";
+});
+
 
 // scroll for all anchors
 $(document).ready(function(){
@@ -39,5 +82,3 @@ $(document).ready(function(){
     });
     return false;
 });
-
-document.getElementById("year").innerHTML = year.getFullYear();
