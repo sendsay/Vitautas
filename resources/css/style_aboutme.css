@@ -202,38 +202,47 @@ header {
 ....##.....#######.....##.....#######..##.......
 */
 #toTop {
-width:76px;
-   height: 76px;  
-   position: fixed; 
-   bottom: -80px; /* отступ кнопки от нижнего края страницы*/
-   right:20px;
+    width:76px;
+    height: 76px;  
+    position: fixed; 
+    bottom: -80px; /* отступ кнопки от нижнего края страницы*/
+    right:20px;
+    /* display: none; */
  }
 
  #toTopImg:hover {
-   color: #555;
+    color: #555;
  }
 
  .toTopBackGround {
-   width: 60px;
-   height: 60px;
-   background: white;
-   position: fixed;
-   bottom: 45px; /* отступ кнопки от нижнего края страницы*/
-   right:35px;
-   cursor:pointer;
-   border-radius: 50%;
-   -webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.95);
-   -moz-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.85);
-   box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.9);
-   z-index: 2000;
-   font-size: 76px; 
+    width: 60px;
+    height: 60px;
+    background: white;
+    position: fixed;
+    bottom: 45px; /* отступ кнопки от нижнего края страницы*/
+    right:35px;
+    cursor:pointer;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.95);
+    -moz-box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.85);
+    box-shadow: 10px 10px 26px -10px rgba(0,0,0,0.9);
+    z-index: 2000;
+    font-size: 76px; 
  }
 
- #toTopImg {
-     color: #02b200;
-     position: relative; 
-     top: -8px;
-     left: -8px;
+ #toTopImg { 
+    color: #02b200;
+    position: relative; 
+    top: -8px;
+    left: -8px;
  }
 
-/* === END === */
+/*
+.########.##....##.########.
+.##.......###...##.##.....##
+.##.......####..##.##.....##
+.######...##.##.##.##.....##
+.##.......##..####.##.....##
+.##.......##...###.##.....##
+.########.##....##.########.
+*/

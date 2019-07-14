@@ -20,15 +20,14 @@ $(window).scroll(function() {
     }    
   } else {   
     if (flagDown == true) {
-      if (pageName == "index.html") {$('.icon-bar').animate({ left: "-100px" });}
-      $('#toTop').animate({ bottom: "-80px"});        
+      if (pageName == "index.html") {$('.icon-bar').animate({ left: "-100px" });
+      $('#toTop').animate({ bottom: "-80px"});}     
       flagDown = false;
     }
   }     
 
   //rotate button toTop on page
-  if (pageName == "aboutme.html") {
-    
+  if ((pageName == "aboutme.html") || (pageName == "shop_juv.html")) {    
     offset = $(window).scrollTop();
     if(offset <= 300) {         
       offset     = offset / 3.33;
@@ -70,5 +69,10 @@ $(document).ready(function(){
     }, scrollTime);
     e.preventDefault();
   });
+
+  if (pageName != "index.html") {
+    $('#toTop').animate({ bottom: "30px"});
+  }
+
   return false;
 });
