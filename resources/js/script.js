@@ -7,11 +7,7 @@ var offset = 0; // offset page
 //always get page name
 pageName = pageName.substr(pageName.lastIndexOf("/") + 1); 
 //set year to footer
-// document.getElementById("year").innerHTML = year.getFullYear();
-document.getElementById("year").innerHTML = pageName;
-
-
-
+ document.getElementById("year").innerHTML = "2019";
 
 //show buttons toTop and iconBar
 $(window).scroll(function() { 
@@ -69,7 +65,7 @@ $('.section-shop').click(function() {
 
 // scroll for all anchors
 $(document).ready(function(){
-  
+
   $('a[href*=\\#]').bind("click", function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
