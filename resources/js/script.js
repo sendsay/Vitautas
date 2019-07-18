@@ -7,20 +7,24 @@ var offset = 0; // offset page
 //always get page name
 pageName = pageName.substr(pageName.lastIndexOf("/") + 1); 
 //set year to footer
-document.getElementById("year").innerHTML = year.getFullYear();
+// document.getElementById("year").innerHTML = year.getFullYear();
+document.getElementById("year").innerHTML = pageName;
+
+
+
 
 //show buttons toTop and iconBar
 $(window).scroll(function() { 
 
   if($(this).scrollTop() > 300) { 
     if (flagDown == false) {          
-      if (pageName == "index.html") {$('.icon-bar').animate({ left: "0px" });}
+      if ((pageName == "index.html") || (pageName == "")) {$('.icon-bar').animate({ left: "0px" });}
       $('#toTop').animate({ bottom: "30px"});
       flagDown = true;
     }    
   } else {   
     if (flagDown == true) {
-      if (pageName == "index.html") {$('.icon-bar').animate({ left: "-100px" });
+      if ((pageName == "index.html")  || (pageName == "")) {$('.icon-bar').animate({ left: "-100px" });
       $('#toTop').animate({ bottom: "-80px"});}     
       flagDown = false;
     }
@@ -44,6 +48,9 @@ $('#toTop').click(function() {
     case "index.html":
       $('body, html, footer').animate({scrollTop:0}, scrollTime);
       break;
+    case "":
+      $('body, html, footer').animate({scrollTop:0}, scrollTime);
+      break;          
   
     default:
       if (offset > 0) {
@@ -62,6 +69,7 @@ $('.section-shop').click(function() {
 
 // scroll for all anchors
 $(document).ready(function(){
+  
   $('a[href*=\\#]').bind("click", function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
