@@ -1,4 +1,5 @@
 <?
+
 $mail = $_POST["order"];
 $subject = htmlentities($_GET["subj"]) . "/ Заказ (".date("d.m.Y h:i").")";
 
@@ -29,7 +30,6 @@ $template .= '<hr>' . $_SERVER['HTTP_REFERER'];
 
 // Clear form
 
-
 $head = "<tr><th>ID</th><th>Название</th><th>Цена</th><th>Кол-во</th><th>Всего</th></tr>";
 
 $template = str_replace ( "<tbody>" ,"<tbody>".$head, $template);
@@ -41,6 +41,7 @@ $headers = "From: " . $from . "\r\n";
 $headers .= "Reply-To: ". $from . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
 
 $success = mail("sendsay@yahoo.com", $subject, $template, $headers);
 echo ($success) ? 'true' : 'false';
