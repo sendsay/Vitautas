@@ -307,7 +307,8 @@ function WICard(obj, plugins)
 			
 			};
 		$('.basket_num_buttons').remove();
-		$.post( "sendmail.php?subj=Order WICart", { "order": bodyHTML }).done(function( data ) {
+		// $.post( "sendmail2.php?subj=Order WICart", { "order": bodyHTML }).done(function( data ) {
+			$post("sendmail2.php").done(function( data ) {
 		cart.closeWindow("bcontainer", 1)	
 		cart.closeWindow("order", 0);
 
@@ -324,7 +325,7 @@ function WICard(obj, plugins)
 	this.getForm = function (formId)
 		{
 		var formObj = document.getElementById(formId);
-		var copyForm = formObj.cloneNode(true);
+		var copyForm = formObj.cloneNode(true); // cloneNode(true);
 		
 		INPUTS=[].slice.call( copyForm.querySelectorAll("input,select,textarea") );
 	
