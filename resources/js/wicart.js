@@ -184,9 +184,9 @@ function WICard(obj, plugins)
 			<div id='blindLayer' class='blindLayer'></div> \
 			<div id='bcontainer' class='bcontainer'> \
 			<div id='bsubject'>" + local.basket + "<a id='bclose' href='#' onclick='" + this.objNAME + ".closeWindow(\"bcontainer\", 1);'><img src='data:image/jpeg;base64,"+ this.IMG + "' /></a></div> \
-			<table id='bcaption'><tr><td>ID</td><td>" + local.name + "</td><td>" + + "</td><td>" + local.num + "</td><td>" + +"</td><td></td></tr></table> \
+			<table id='bcaption'><tr><td>ID</td><td>" + local.name + "</td><td>" + local.num +"</td><td>Удалить</td></tr></table> \
 			<div id='overflw'><table class='btable' id='btable'></table></div> \
-			<div id='bfooter'> <button class='bbutton' onclick=\"cart.showWinow('order', 1)\">" + local.order + "</button><span id='bsum'>...</span></div> \
+			<div id='bfooter'> <button class='bbutton' onclick=\"cart.showWinow('order', 1)\">" + local.order + "</div> \
 			</div> \
 		");	
 			
@@ -205,12 +205,12 @@ function WICard(obj, plugins)
 				var productLine = '<tr class="bitem" id="wigoodline-' + id + '"> \
 													<td>'+ id +'</td> \
 													<td><a href="' + url + '">' + photo + name +'</a></td> \
-													<td id="lineprice_' + id + '"class="wigoodprice">' + price + ' руб.</td> \
+													 \
 													<td> \
 													<div class="basket_num_buttons" id="minus_' + id + '">-</div> \
 													<span class="basket_num" id="basket_num_' + id + '">'+ num +'</span> \
 													<div class="basket_num_buttons" id="plus_' + id + '">+</div></td> \
-													<td id="linesum_' + id + '">'+ parseFloat(price * num) +' руб.</td> \
+													 \
 													<td><a href="#" onclick="' + this.objNAME + '.delItem(\'' + id + '\')"><img src="data:image/jpeg;base64,'+ this.IMG + '" /></a></td> \
 													</tr>';	
 				}
@@ -230,7 +230,7 @@ function WICard(obj, plugins)
 			
 			$("#basket_num_" + cartItemID).html(cartNum);
 			var price = parseFloat( $("#lineprice_" + cartItemID).html() );
-			$("#linesum_" + cartItemID).html( parseFloat(price * cartNum) + ' руб.' );
+		//	$("#linesum_" + cartItemID).html( parseFloat(price * cartNum) + ' руб.' );
 			
 			self.sumAll();
 			
@@ -245,7 +245,7 @@ function WICard(obj, plugins)
 			self.DATA[cartItemID].num = cartNum;
 			$("#basket_num_" + cartItemID).html(cartNum);
 			var price = parseFloat( $("#lineprice_" + cartItemID).html() );
-			$("#linesum_" + cartItemID).html( parseFloat(price * cartNum)  + ' руб.' );
+		//	$("#linesum_" + cartItemID).html( parseFloat(price * cartNum)  + ' руб.' );
 			
 			self.sumAll();
 			self.reCalc();
