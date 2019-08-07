@@ -148,7 +148,9 @@ function WICard(obj, plugins)
 				}
 				
 		// *** //		 		
-		this.widjetObj.html(local.goods + " " + num + " " + local.amount + " " + sum + " Руб.");
+//		this.widjetObj.html(local.goods + " " + num + " " + local.amount + " " + sum + " Руб.");
+		this.widjetObj.html(local.goods + " " + num + " шт.");
+
 		localStorage.setItem(this.cardID, JSON.stringify(this.DATA));
 		}
 	this.clearBasket = function()
@@ -167,15 +169,26 @@ function WICard(obj, plugins)
 		
 		if ($('#bcontainer').length == 0)
 			{		
+			// $("body").append(" \
+			// 	<div id='blindLayer' class='blindLayer'></div> \
+			// 	<div id='bcontainer' class='bcontainer'> \
+			// 	<div id='bsubject'>" + local.basket + "<a id='bclose' href='#' onclick='" + this.objNAME + ".closeWindow(\"bcontainer\", 1);'><img src='data:image/jpeg;base64,"+ this.IMG + "' /></a></div> \
+			// 	<table id='bcaption'><tr><td>ID</td><td>" + local.name + "</td><td>" + local.price + "</td><td>" + local.num + "</td><td>" + local.all + "</td><td></td></tr></table> \
+			// 	<div id='overflw'><table class='btable' id='btable'></table></div> \
+			// 	<div id='bfooter'> <button class='bbutton' onclick=\"cart.showWinow('order', 1)\">" + local.order + "</button><span id='bsum'>...</span></div> \
+			// 	</div> \
+			// ");	
+
+
 			$("body").append(" \
-				<div id='blindLayer' class='blindLayer'></div> \
-				<div id='bcontainer' class='bcontainer'> \
-				<div id='bsubject'>" + local.basket + "<a id='bclose' href='#' onclick='" + this.objNAME + ".closeWindow(\"bcontainer\", 1);'><img src='data:image/jpeg;base64,"+ this.IMG + "' /></a></div> \
-				<table id='bcaption'><tr><td>ID</td><td>" + local.name + "</td><td>" + local.price + "</td><td>" + local.num + "</td><td>" + local.all + "</td><td></td></tr></table> \
-				<div id='overflw'><table class='btable' id='btable'></table></div> \
-				<div id='bfooter'> <button class='bbutton' onclick=\"cart.showWinow('order', 1)\">" + local.order + "</button><span id='bsum'>...</span></div> \
-				</div> \
-			");	
+			<div id='blindLayer' class='blindLayer'></div> \
+			<div id='bcontainer' class='bcontainer'> \
+			<div id='bsubject'>" + local.basket + "<a id='bclose' href='#' onclick='" + this.objNAME + ".closeWindow(\"bcontainer\", 1);'><img src='data:image/jpeg;base64,"+ this.IMG + "' /></a></div> \
+			<table id='bcaption'><tr><td>ID</td><td>" + local.name + "</td><td>" + + "</td><td>" + local.num + "</td><td>" + +"</td><td></td></tr></table> \
+			<div id='overflw'><table class='btable' id='btable'></table></div> \
+			<div id='bfooter'> <button class='bbutton' onclick=\"cart.showWinow('order', 1)\">" + local.order + "</button><span id='bsum'>...</span></div> \
+			</div> \
+		");	
 			
 			}
 			else 
